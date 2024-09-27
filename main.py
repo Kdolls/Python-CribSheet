@@ -1,6 +1,30 @@
 import math
+from traceback import print_tb
 
 #                       Python Crib sheet
+
+# 1- variables
+#     variable name = ''
+#     animal = "monkey"
+#
+#     -can also be declared in a manner that enhances readability:
+        # type annotation:
+
+#           txt : str = 'apple'
+#           user: int = int(input('enter a number: '))
+
+
+#
+#
+# 2- data types
+#     number: int = 10    #
+#     decimal: float = 1.0
+#     text: str = 'hello'
+#     active: bool = False
+#
+#     names: list = ["Bob","table","whatever"]
+#     coordinates: tuple = (1.5, 2.5)
+#     unique: set = {1,4,2,9}
 
 
 # Input function
@@ -170,20 +194,167 @@ import math
 #         print('*', end=' ')
 #     print()
 
-#       # right side triangle
-
-stars: int = 6
-
-for r in range(stars):
-
-    for c in range(r,stars):
-        print(' ', end='')
-
-    for c in range(r + 1):
-        print('*', end='')
-    print()
 
 
+    # increasing and decreasing triangles
+
+# stars: int = 6
+#
+# for r in range(stars):
+#     for c in range(r , stars):
+#         print('*', end='')
+#     print()
+#
+#
+#
+# for r in range(stars):
+#     for c in range(r + 1):
+#         print('*', end='')
+#     print()
+#
+
+# right side triangle
+
+
+# n: int = 6
+#
+# for r in range(n):
+#
+#     for c in range(r,n):
+#         print(' ', end='')
+#
+#     for c in range(r + 1):
+#         print('*', end='')
+#     print()
+#
+#
+#
+# # left side triangle
+# for r in range(n):
+#
+#     for c in range(r + 1):
+#         print('*', end='')
+#
+#     for c in range(r, n):
+#         print(' ', end='')
+#     print()
+
+
+# a Pyramid
+
+# n: int = 6
+#
+#
+# for i in range(n):
+#
+#     for j in range(i, n):
+#         print(' ', end='')
+#
+#     for j in range(i + 1):
+#         print('*', end='')
+#
+#     for j in range(i):
+#         print('*', end='')
+#     print()
+
+
+
+# creating letter F using list
+
+# some_list: list = [2,2,2,5]
+#
+#
+# for i in some_list:
+#     output = ''
+#     for j in range(i):
+#         output += 'x'
+#     print(output)
+
+
+
+# creating letter L using list
+# for i in some_list:
+#     output = ''
+#     for j in range(i):
+#         output += '*'
+#     print(output)
+#
+
+
+#       Lists
+#     refer to datatypes same document for declaration.
+
+# names: list = ['bool', 'jeep','bandit & bandita']
+#
+# print(names[0][2]) # indexing , position 1: string, position 2: character in string
+
+
+
+#   2D lists
+    # 2 dimensional list
+
+# matrix: list =  [
+#     [1,2,3],
+#     [4,5,6],
+#     [7,8,9]
+# ]
+
+
+# print(matrix[0][0]) # to access first digit in first list
+
+#   iterate over list
+
+# for i in matrix:    # prints entire list
+#     print(i)
+
+
+# for i in matrix:    # prints all individual items in list
+#     for j in i:
+#         print(j)
+
+
+
+#   list methods
+    # inbuilt method objects used to manipulate lists
+
+
+#
+# a_list: list = ['jumbo', 232, 'bendecho carlon', '7amda', 09880.98, 'my name is Earl!']
+# numbers: list= [1,1,1,1,1,1,3,4,5,6,7,9,9,9,9,9]
+
+
+# print(a_list.append('I am new item'))   # adds an item at end of list
+# print(a_list.pop())                     #remvoes last item
+# print(a_list.insert(1,10)) # inserts an item at index level
+# print(a_list.remove('jumbo'))               # removes specific items
+# # print(a_list.clear())                   # removes all items in list
+# print(a_list.count(0))            # counts the amount of specific items in a list
+# print(a_list.reverse())
+# print(a_list.sort())
+
+
+# list example: program that removes duplicates
+
+# empty_list: list = []
+#
+# for i in numbers:
+#     if i not in empty_list:
+#         empty_list.append(i)
+# print(empty_list)
+
+
+# Dictionary
+    # unique key : value pairs
+
+# phone: str = input ('Phone: ')
+# I_am_dictionary: dict = {'1':'one', '2':'two', '3':'three', '4':'four'}
+#
+# output: str = ''
+# for items in phone:
+#     output += I_am_dictionary.get(items, 'not there !') + ' '
+# print(output)
+#
+#
 
 
 
@@ -211,7 +382,6 @@ for r in range(stars):
 
 
 
-# Error handling
 
 
 
@@ -223,6 +393,28 @@ for r in range(stars):
 
 
 
+
+
+
+#       Error handling functions
+
+
+# value error
+
+def numbers():
+
+    try:
+        user: int = int(input('enter a number: '))
+
+        print('thank you for entering ', user)
+    except ValueError:
+        print('I said a NUMBER')
+
+
+
+
+
+numbers()
 # # Data types
 #
 # numbers: int = 10 # any number
@@ -324,21 +516,6 @@ for r in range(stars):
 #
 #     # call it
 # print(mango * 8)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
