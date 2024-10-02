@@ -13,9 +13,6 @@ from traceback import print_tb
 #           txt : str = 'apple'
 #           user: int = int(input('enter a number: '))
 
-
-#
-#
 # 2- data types
 #     number: int = 10    #
 #     decimal: float = 1.0
@@ -355,45 +352,18 @@ from traceback import print_tb
 # print(output)
 #
 #
+    # modules
+            # inbuilt functions and methods, listed in link
+#   https://www.w3schools.com/python/python_modules.asp
 
 
+    # Directories
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# from pathlib import Path
+# Absolute path
+    #/user/local/bin
+        # path = Path('emails')
+        # print(path.mdir()) # method that creates directory from class Path
 
 
 #       Error handling functions
@@ -401,20 +371,18 @@ from traceback import print_tb
 
 # value error
 
-def numbers():
+# def numbers():
+#     while True:
+#         try:
+#             user: int = int(input('enter a number: '))
+#
+#             print('thank you for entering ', user)
+#             break
+#         except ValueError:
+#             print('I said a NUMBER')
+# numbers()
 
-    try:
-        user: int = int(input('enter a number: '))
 
-        print('thank you for entering ', user)
-    except ValueError:
-        print('I said a NUMBER')
-
-
-
-
-
-numbers()
 # # Data types
 #
 # numbers: int = 10 # any number
