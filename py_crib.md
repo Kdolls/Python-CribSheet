@@ -6,7 +6,7 @@
 
 #### Indexing/Slicing Methods
 
-```
+```python
 my_list = [1, 2, 3, 4, 5]
 print(my_list[0])  # Output: 1
 print(my_list[-1])  # Output: 5
@@ -18,7 +18,7 @@ print(my_list[1:3])  # Output: [2, 3]
 
 #### Methods
 
-```
+```python
 my_list = [1, 2, 3]
 
 # append()
@@ -38,7 +38,7 @@ print(my_list)   # Output: [1, 4, 2, 3]
 
 #### Indexing/Slicing Methods
 
-```
+```python
 my_tuple = (1, 2, 3, 4, 5)
 print(my_tuple[0])  # Output: 1
 print(my_tuple[-1])  # Output: 5
@@ -56,7 +56,7 @@ print(my_tuple[1:3])  # Output: (2, 3)
 
 #### Indexing/Slicing Methods
 
-```
+```python
 my_dict = {'a': 1, 'b': 2}
 print(my_dict['a'])  # Output: 1
 
@@ -66,7 +66,7 @@ print(list(my_dict.keys()))  # Output: ['a', 'b']
 
 #### Methods
 
-```
+```python
 my_dict = {'a': 1, 'b': 2}
 
 # update()
@@ -82,7 +82,7 @@ print(my_dict)   # Output: {'b': 2}
 
 #### Methods
 
-```
+```python
 my_set = {1, 2, 3}
 
 # add()
@@ -101,7 +101,7 @@ print(my_set)   # Output: {1, 3}
 *Note: Python does not have built-in support for stacks as a data structure. The above methods 
 are implemented using lists.*
 
-```
+```python
 my_stack = [1, 2, 3]
 
 # push()
@@ -120,7 +120,7 @@ print(my_stack)   # Output: [1, 2]
 ffo*Note: Python does not have built-in support for queues as a data structure. The above methods 
 are implemented using lists.*
 
-```
+```python
 my_queue = [1, 2, 3]
 
 # enqueue()
@@ -139,7 +139,7 @@ print(my_queue)   # Output: [2, 3]
 *Note: Python does not have built-in support for deques as a data structure. The above methods 
 are implemented using lists.*
 
-```
+```python
 my_deque = [1, 2, 3]
 
 # append()
@@ -158,7 +158,7 @@ print(my_deque)   # Output: [1, 2]
 *Note: Python does not have built-in support for graphs as a data structure. The above methods 
 are implemented using dictionaries and lists.*
 
-```
+```python
 my_graph = {'A': ['B', 'C'], 'B': ['D'], 'C': []}
 
 # add_edge()
@@ -177,7 +177,7 @@ print(my_graph)   # Output: {'A': ['B', 'E'], 'B': ['D'], 'C': []}
 *Note: Python does not have built-in support for trees as a data structure. The above methods 
 are implemented using dictionaries and lists.*
 
-```
+```python
 my_tree = {'A': {'B': 1, 'C': 2}, 'B': {}, 'C': {}}
 
 # add_child()
@@ -193,7 +193,7 @@ print(my_tree)   # Output: {'A': {'C': 2, 'D': 3}, 'B': {}, 'C': {}}
 
 Example:
 
-```
+```python
 my_list = ['a', 'b']
 my_list.append('c')
 print(my_list)  # Output: ['a', 'b', 'c']
@@ -204,7 +204,7 @@ position.
 
 Example:
 
-```
+```python
 my_list = ['a', 'b']
 my_list.insert(0, 'c')
 print(my_list)  # Output: ['c', 'a', 'b']
@@ -214,7 +214,7 @@ print(my_list)  # Output: ['c', 'a', 'b']
 
 Example:
 
-```
+```python
 my_list = ['a', 'b']
 my_list.extend(['c', 'd', 'e'])
 print(my_list)  # Output: ['a', 'b', 'c', 'd', 'e']
@@ -225,7 +225,7 @@ list.
 
 Example:
 
-```
+```python
 my_list = ['a', 'b', 'c']
 my_list.remove('b')
 print(my_list)  # Output: ['a', 'c']
@@ -236,7 +236,7 @@ returns it.
 
 Example:
 
-```
+```python
 my_list = ['a', 'b', 'c']
 popped_element = my_list.pop(0)
 print(popped_element)  # Output: 'a'
@@ -248,7 +248,7 @@ value in the list.
 
 Example:
 
-```
+```python
 my_list = ['a', 'b', 'c']
 index = my_list.index('b')
 print(index)  # Output: 1
@@ -259,7 +259,7 @@ list.
 
 Example:
 
-```
+```python
 my_list = ['a', 'a', 'b', 'c']
 count = my_list.count('a')
 print(count)  # Output: 2
@@ -269,7 +269,7 @@ print(count)  # Output: 2
 
 Example:
 
-```
+```python
 my_list = [4, 2, 1, 3]
 my_list.sort()
 print(my_list)  # Output: [1, 2, 3, 4]
@@ -279,23 +279,20 @@ print(my_list)  # Output: [1, 2, 3, 4]
 
 Example:
 
-```
+```python
 my_list = ['a', 'b', 'c']
 my_list.reverse()
 print(my_list)  # Output: ['c', 'b', 'a']
 ```
 
-**Really Nice Practices**
+If `__name__` == `"__main__"`,Method
 ================================
-
-If `__name__` == ` "__main__"`, Method
------------------------------------
 
 Just type `main` and press Tab. It tells the interpreter to run a function
 only if it's run directly where the function lives, but not if imported. 
 This allows you to run any function only once if called.
 
-```
+```python
 def connect()-> None:
     print('connecting....')
     time.sleep(2)
@@ -311,7 +308,7 @@ This code will only run once at any given time.
 
 Using list comprehension to loop through a list:
 
-```
+```python
 def find_them()-> None:
     things: list[str] = ['mango', 'champaign',
                          'the man who sold the world']
@@ -328,7 +325,7 @@ if __name__ == '__main__':
 Now using list comprehension (without using `append()`, an extraction took
 place):
 
-```
+```python
 things: list[str] = ['mango', 'champaign',
                          'the man who sold the world']
 long_names: list[str] = [i for i in things if len(i) > 5]
@@ -338,7 +335,7 @@ print(long_names)
 **Class Stack**
 =============
 
-```
+```python
 class Stack:
     def __init__(self):
         self.elements = ['12', 'mahmoud', 'ducks', '@*&)^%(*', 'randomly 
@@ -557,7 +554,7 @@ program.
 
 Lambda functions follow the following syntax:
 
-```
+```python
 lambda arguments : expression
 ```
 
@@ -571,7 +568,7 @@ Where:
 
 Here's an example that calculates the square of a number:
 
-```
+```python
 square = lambda x: x ** 2
 print(square(4))  # Output: 16
 ```
@@ -590,7 +587,7 @@ Lambda functions are often used as:
 
 Here's an example of using a lambda function with the `map` function:
 
-```
+```python
 numbers = [1, 2, 3, 4, 5]
 squared_numbers = list(map(lambda x: x ** 2, numbers))
 print(squared_numbers)  # Output: [1, 4, 9, 16, 25]
@@ -896,7 +893,5 @@ def divide(a, b):
 divide(4, 2)  # prints "The result is 2.0."
 divide(4, 0)  # prints "You cannot divide by zero!" 
 ```
-
-
 
 ## end...
