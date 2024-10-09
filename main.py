@@ -530,3 +530,26 @@ from traceback import print_tb
 #                             'the man who sold the world']
 #     long_names: list[str] = [i for i in things if len(i) > 5]
 #     print(long_names)
+
+#
+# class Stack:
+#     def __init__(self):
+#         self.elements = ['1212','mahmoud','ducks', '@*&)^%(*', 'randomly ya 7abeby']
+#
+#     def push(self, item):
+#         self.elements.append(item)
+#
+#     def pop(self):
+#         if not self.is_empty():
+#             return self.elements.pop()
+#         else:
+#             return None
+#
+#     def is_empty(self):
+#         return len(self.elements) == 0
+#
+# if __name__ == '__main__':
+#     someList: list = ['1212','mahmoud','ducks', '@*&)^%(*', 'randomly ya 7abeby']
+#     x = Stack()
+#     print(x.elements)
+
