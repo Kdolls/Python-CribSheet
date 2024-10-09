@@ -443,8 +443,6 @@ Output:
 These examples demonstrate the basic syntax and usage of Python `for` 
 loops.
 
-
-
 ... 
 **Python Function**
 =====================
@@ -547,8 +545,6 @@ Output: `[2, 4]`
 
 This code creates a new list `even_numbers` containing only the even 
 numbers from the original list.
-
-
 
 Python Lambda Functions
 =====================
@@ -743,13 +739,10 @@ import datetime
 
 now = datetime.datetime.now()
 print(now)  # Output: the current date and time
-
 ```
 
-
-
-* *Python Files**  *
-  =====================
+Python Files
+=====================
 
 In Python, a file is a collection of related code and data that can be 
 saved on disk and re-used. Here are some examples of different types of 
@@ -839,8 +832,6 @@ def calculate_area(radius):
 print(calculate_area(5))  # Output: the area of a circle with radius 5
 ```
 
-
-
 ### Classes and Objects
 
 In Python, a class is a blueprint for creating objects. An object is an 
@@ -906,6 +897,6 @@ divide(4, 2)  # prints "The result is 2.0."
 divide(4, 0)  # prints "You cannot divide by zero!" 
 ```
 
-##end
+
 
 ## end...
